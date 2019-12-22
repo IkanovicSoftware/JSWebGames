@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <style>
+    body,
+    h1 {
+      font-family: "Raleway", sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    .select {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .select-text {
+      font-weight: bold;
+      padding: 10px;
+      font-size: 64px !important;
+    }
+
+    .select-text:hover {
+      transform: scale(1.5);
+      cursor: pointer;
+      border: 1px solid #d0d0d0;
+    }
+
+    .img {
+      background-image: url("https://wallpaperplay.com/walls/full/8/5/5/121411.jpg");
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+
+  <body>
+    <div class="img w3-display-container w3-animate-opacity w3-text-white">
+      <div class="w3-display-topleft w3-padding-large w3-xxlarge">
+        BrickBeaker.js
+      </div>
+      <div class="select">
+        <h1 class="select-text" onClick="startEasyGame();">Easy Game</h1>
+        <h1 class="select-text" onClick="startHardMap();">Hard Game</h1>
+        <h1 class="select-text" onClick="mapSelectGame();">Maps</h1>
+        <h1 class="select-text" onClick="startCreateMap();">Create Map</h1>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function startEasyGame() {
+      window.location.href = "Easy_Game.html";
+    }
+
+    function startCreateMap() {
+      window.location.href = "Create_Map.html";
+    }
+
+    function startHardMap() {
+      window.location.href = "Hard_Game.html";
+    }
+
+    function mapSelectGame() {
+      window.location.href = "Map_Select.html";
+    }
+  </script>
+</html>
