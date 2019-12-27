@@ -34,7 +34,6 @@ class Bike {
       this.tail.push(createVector(this.location.x, this.location.y));
       this.location.y += this.size;
     }
-    this.checkHit();
 
     this.deleteSegments();
   }
@@ -56,9 +55,9 @@ class Bike {
     }
   }
 
-  checkHit() {
-    for (let i = 0; i < this.tail.length; i++) {
-      var segment = this.tail[i];
+  checkHit(obj) {
+    for (let i = 0; i < obj.tail.length; i++) {
+      var segment = obj.tail[i];
       if (this.location.x == segment.x && this.location.y == segment.y) {
         this.end = true;
       }
