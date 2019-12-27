@@ -10,6 +10,7 @@ function setup() {
 function draw() {
   background(200);
   bike.display();
+  bike.checkHit(bike);
   bike.move();
   console.log(bike.tail);
 }
